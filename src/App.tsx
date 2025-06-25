@@ -6,6 +6,7 @@ import PlusIcon from './assets/icons/plus.svg?react'
 import SpinnerIcon from './assets/icons/spinner.svg?react'
 import TrashIcon from './assets/icons/trash.svg?react'
 import XIcon from './assets/icons/x.svg?react'
+import Badge from "./components/badge";
 
 export default function App() {
   return (
@@ -22,6 +23,10 @@ export default function App() {
         <Icon svg={SpinnerIcon} animate className="fill-gray-400" />
         <Icon svg={TrashIcon} className="fill-green-base" />
         <Icon svg={XIcon} className="fill-green-dark" />
+      </div>
+      <div className="flex gap-1">
+        <Badge variant="secondary">5</Badge>
+        <Badge>2 de 5</Badge>
       </div>
     </div>
   )
